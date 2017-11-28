@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html  lang="pt-BR" >
+
+<head>
+    <meta http-equiv="Content-Language" content="pt" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Traitement des Errours</title>
+
+    <script type="text/javascript">
+        function ShowMessage() {
+            try {
+                a_lert("Traitement des Errours");
+            }
+            catch (e) {
+                msg = "Il y a un erreur en cette pag.\n\n";
+                msg += "Erreur de description: " + e.message;
+                alert(msg);
+            }
+            finally {
+                document.getElementById("exe1").innerHTML = "Finally...";
+            }
+        }
+        function TestThrow() {
+            try {
+                var x = document.getElementById("input1").value;
+                if (x == "") throw "VIDE";
+                if (x > 10) throw "TRES GRAND";
+                if (x < 1) throw "TRES PETIT";
+            }
+            catch (e) {
+                alert("Erreur de description: " + e);
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <p>
+        <button onclick="ShowMessage()"> Try... Catch... Finally</button>
+</p>
+<p id="exe1"></p>
+
+<br>
+
+<p>
+    Veuillez entrer un nombre entre 1 et 10, s'il vous plâit: <br>
+    <input id="input1" type="text"> <br>
+    <button onclick="TestThrow()">OK</button>
+</p>
+</body>
+
+</html>
