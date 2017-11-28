@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For</title>
+
+   <script type="text/javascript">
+		
+		function testFor1()
+		{
+			
+			var r1 = "";
+			
+			for(var i = 0; i < 5; i++)
+			{
+				r1 = r1 + "le numero est  " + i + "<br>";
+			}
+			
+			document.getElementById("for1").innerHTML = r1;
+		}		
+		
+		function testFor2()
+		{
+			var r2 = 0;
+			
+			for(var i = 0; i <= 100; i = i + 2)
+			{
+				r2 = r2 + i;
+			}
+			
+			document.getElementById("for2").innerHTML = r2;
+		}
+		
+	</script>
+</head>
+<body>
+    <p><button onclick="testFor1()">Test FOR1</button></p>
+	
+	<p><span id="for1" name="for1">Le resultat!</span></p>
+	
+	<br>
+	
+	<p><button onclick="testFor2()">Test FOR2</button></p>
+	
+	<p><span id="for2" name="for2">Le resultat!</span></p>
+</body>
+
+</html>

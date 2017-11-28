@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WHILE et DO WHILE</title>
+	
+	<script type="text/javascript">
+	
+		function testWhile()
+		{
+			var result = "";
+			var numero = 5;
+			
+			while(numero < 5)
+			{
+				result = result + " " + numero;
+				numero ++;
+			}
+			
+			document.getElementById("_while").innerHTML = result;
+		}
+		
+		function testDoWhile()
+		{
+			var result = "";
+			var numero = 5;
+			
+			do
+			{
+				result = result + " " + numero;
+				numero ++;
+			} while(numero < 5)
+			
+			document.getElementById("dowhile").innerHTML = result;			
+		}
+	
+	</script>
+</head>
+<body>
+
+	<p><button onclick="testWhile()">WHILE</button></p>
+	
+	<p><span id="_while" name="_while"></span></p>
+	
+	<br>
+	
+	<p><button onclick="testDoWhile()">DO WHILE</button></p>
+	
+	<p><span id="dowhile" name="dowhile"></span></p>
+
+</body>
+
+</html>
