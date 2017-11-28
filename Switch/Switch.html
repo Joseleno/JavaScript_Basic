@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Switch</title>
+
+   <script type="text/javascript">
+		
+		function testSwitch()
+		{
+			var x = 5;
+			var result;
+			
+			switch(x)
+			{
+				case 0:
+					result = "X = 0";
+					alert("X = 0");
+					break;
+				case 1:
+					result = "X = 1";
+					break;
+				case 2:
+					result = "X = 2";
+					break;
+				case 3:
+					result = "X = 3";
+					break;
+				case 4:
+					result = "X = 4";
+					break
+				default:
+					result = "Rien";
+					break;
+			}
+			
+			document.getElementById("test").innerHTML = result;
+		}
+		
+	</script>
+</head>
+<body>
+    <p>
+        <button onclick="testSwitch()">Test Switch</button>
+    </p>
+	<p>
+        <span id="test" name="test">Resultado</span>
+    </p>
+</body>
+
+</html>
