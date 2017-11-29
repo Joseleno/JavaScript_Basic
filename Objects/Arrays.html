@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Language" content="pt" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>le Objet - Array</title>
+
+    <p>
+        <h1>Bonjour le monde!</h1>
+        <h1>==================================================================================</h1>
+        <h1 id="id1"></h1>
+    </p>
+
+    <script type="text/javascript">
+        function Array1() {
+            var fruits = new Array();
+            fruits[0] = "Raisin";
+            fruits[1] = "citron";
+            fruits[2] = "Banana";
+            fruits[3] = "Poire";
+            fruits[4] = "ananas";
+
+            alert(fruits[4]);
+        }
+
+        function Array2() {
+            var mesCouleurs = new Array();
+            mesCouleurs[0] = "Vert";
+            mesCouleurs[1] = "Rouge";
+            mesCouleurs[2] = "Bleu";
+            mesCouleurs[3] = "Gris";
+            mesCouleurs[4] = "Noir";
+            mesCouleurs[5] = "Jaune";
+            mesCouleurs[6] = "Blanc";
+            mesCouleurs[7] = "Violet";
+            mesCouleurs[8] = "Rose";
+            mesCouleurs[9] = "Marron";
+
+            var i;
+            var res = "";
+            for (i = 0; i < mesCouleurs.length; i++) {
+                res = res + mesCouleurs[i] + "<br>";
+            }
+
+            document.getElementById("test").innerHTML = res;
+        }
+
+
+    </script>
+
+</head>
+
+
+<body>
+
+    <p>
+        <button onclick="Array1()">Array - 1</button>
+</p>
+<p>
+    <button onclick="Array2()">Array - 2</button>
+</p>
+<br>
+	
+	<p><span id="test" name="test">Le Result</span></p>
+</html>
