@@ -65,6 +65,63 @@
             alert(n);
         }
 
+        function Date1() {
+            var mydatenow = new Date();
+            alert(mydatenow);
+        }
+
+        function Date2() {
+            var d = new Date();
+            alert(d.getFullYear());
+        }
+
+        function Date3() {
+            var d = new Date();
+            d.setFullYear(2100, 6, 13);
+            alert(d);
+        }
+
+
+        function Mat1() {
+            var x = 2.234;
+            var x_round = Math.round(x);
+            alert('Real value: ' + x + ' / Round value: ' + x_round);
+        }
+
+        function Mat2() {
+            var x_random = Math.random();
+            alert(x_random);
+        }
+
+        function Mat3() {
+            var x = 25;
+            var x_sqrt = Math.sqrt(x);
+            alert("Math.sqrt(25) = " + x_sqrt);
+        }
+
+
+        function RegExp1() {
+            var str = "Je veux travailler au Quebec";
+            var patt = /veux/i;
+            alert(str.match(patt));
+        }
+
+        function RegExp2() {
+            var str = "Je veux travailler au Quebec, je suis un devellouper";
+            var patt = /au/g;
+            alert(str.match(patt));
+        }
+
+        function RegExp3() {
+            var patt = new RegExp("Quebec", "i");
+            alert(patt.test("Je veux travailler au Quebec, je suis un devellouper"));
+        }
+
+        function RegExp4() {
+            var patt = new RegExp("SUIS", "i");
+            alert(patt.exec("Je veux travailler au Quebec, je suis un devellouper"));
+        }
+
 
     </script>
 
@@ -83,7 +140,7 @@
     <button onclick="TestMethode()">Méthodes</button>
 </p>
 <br>
- <h1>==================================================================================</h1>
+<h1>==================================================================================</h1>
 <p>
     <button onclick="TestBoolean()">Boolean Object</button>
 </p>
@@ -100,7 +157,7 @@
     <button onclick="Num2()">Numéro Object</button>
 </p>
 <br>
- <h1>==================================================================================</h1>
+<h1>==================================================================================</h1>
 <p>
     <button onclick="String1()">String - 1</button>
 </p>
@@ -112,7 +169,50 @@
 <p>
     <button onclick="String3()">String - 3</button>
 </p>
+<br>
+<h1>==================================================================================</h1>
+<p>
+    <button onclick="Date1()">Date - 1</button>
+</p>
 
+<p>
+    <button onclick="Date2()">Date - 2</button>
+</p>
+
+<p>
+    <button onclick="Date3()">Date - 3</button>
+</p>
+<br>
+<h1>==================================================================================</h1>
+<p>
+    <button onclick="Mat1()">Mat - 1</button>
+</p>
+
+<p>
+    <button onclick="Mat2()">Mat - 2</button>
+</p>
+
+<p>
+    <button onclick="Mat3()">Mat - 3</button>
+</p>
+
+<br>
+<h1>==================================================================================</h1>
+<p>
+    <button onclick="RegExp1()">RegExp - 1</button>
+</p>
+
+<p>
+    <button onclick="RegExp2()">RegExp - 2</button>
+</p>
+
+<p>
+    <button onclick="RegExp3()">RegExp - 3</button>
+</p>
+
+<p>
+    <button onclick="RegExp4()">RegExp - 4</button>
+</p>
 </body>
 
 </html>
