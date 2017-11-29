@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Language" content="pt" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>les Objets</title>
+
+    <p>
+        <h1>Bonjour le monde!</h1>
+        <h1>==================================================================================</h1>
+        <h1 id="id1"></h1>
+    </p>
+
+    <script type="text/javascript">
+
+        function TestPropriete() {
+            var msg = "Bonjour le monde!";
+            var x = msg.length;
+            alert("Le numero de lettre est: " + x);
+        }
+
+
+        function TestMethode() {
+            var msg = "Bonjour le monde!";
+            var x = msg.toUpperCase();
+            //document.getElementById("id1").innerHTML = x;
+
+            alert(x);
+
+        }
+
+        function TestBoolean() {
+            var booleanTest = new Boolean("1");
+            var x = booleanTest.valueOf();
+            alert("L'objet est booléen: " + x);
+        }
+
+        function Num1() {
+            var x = Number.MAX_VALUE;
+            alert(x);
+        }
+
+        function Num2() {
+            var num = 3.14159;
+            var n = num.toFixed(2);
+            alert(n);
+        }
+
+        function String1() {
+            var name = "Trois Riveire";
+            var character = name[9];
+            alert(character);
+        }
+
+        function String2() {
+            var name = "Ville de Quebec";
+            var x = name.length;
+            alert(x);
+        }
+
+        function String3() {
+            var str = "Bienvenue au Quebec";
+            var n = str.indexOf("Quebec");
+            alert(n);
+        }
+
+
+    </script>
+
+</head>
+
+
+<body>
+
+    <p>
+        <button onclick="TestPropriete()">Propriétés</button>
+</p>
+
+
+
+<p>
+    <button onclick="TestMethode()">Méthodes</button>
+</p>
+<br>
+ <h1>==================================================================================</h1>
+<p>
+    <button onclick="TestBoolean()">Boolean Object</button>
+</p>
+
+
+
+<p>
+    <button onclick="Num1()">Numéro Object</button>
+</p>
+
+
+
+<p>
+    <button onclick="Num2()">Numéro Object</button>
+</p>
+<br>
+ <h1>==================================================================================</h1>
+<p>
+    <button onclick="String1()">String - 1</button>
+</p>
+
+<p>
+    <button onclick="String2()">String - 2</button>
+</p>
+
+<p>
+    <button onclick="String3()">String - 3</button>
+</p>
+
+</body>
+
+</html>

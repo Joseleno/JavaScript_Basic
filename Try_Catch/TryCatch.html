@@ -7,13 +7,13 @@
     <title>Traitement des Errours</title>
 
     <script type="text/javascript">
-        function ShowMessage() {
+        function Showmsg() {
             try {
                 a_lert("Traitement des Errours");
             }
             catch (e) {
                 msg = "Il y a un erreur en cette pag.\n\n";
-                msg += "Erreur de description: " + e.message;
+                msg += "Erreur de description: " + e.msg;
                 alert(msg);
             }
             finally {
@@ -38,7 +38,7 @@
 
 <body>
     <p>
-        <button onclick="ShowMessage()"> Try... Catch... Finally</button>
+        <button onclick="Showmsg()"> Try... Catch... Finally</button>
 </p>
 <p id="exe1"></p>
 
