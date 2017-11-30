@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Language" content="pt" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>le Objet - Array</title>
+
+    <p>
+        <h1>Bonjour le monde!</h1>
+        <h1>==================================================================================</h1>
+        <h1 id="id1"></h1>
+    </p>
+
+    <script type="text/javascript">
+       
+        function Array1()
+		{
+			var couleurs = new Array();
+			couleurs[0] = "Jaune";
+			couleurs[1] = "Vert";
+			couleurs[2] = "Rose";
+			couleurs[3] = "Rouge";
+            couleurs[4] = "Noir";
+			
+			alert(couleurs.length);
+		}
+		
+		function Array2()
+		{
+			var vetements1 = ["Veste", "Chemise","Robe","Short"];
+			var vetements2 = ["Jupe", "Gants", "Manteau","Pantalon", "Écharpe", "Chaussettes"];
+			var vetements = vetements1.concat(vetements2);
+			
+			var i;
+			var res = "";
+			for(i = 0; i < vetements.length; i++)
+			{
+				res = res + vetements[i] + "<br>";
+			}
+			
+			document.getElementById("test").innerHTML = res;
+		}
+
+
+    </script>
+
+</head>
+
+
+<body>
+
+    <p>
+        <button onclick="Array1()">Array - 1</button>
+</p>
+<p>
+    <button onclick="Array2()">Array - 2</button>
+</p>
+<br>
+	<h2> Le liste:   </h2> 
+	<p><span id="test" name="test"></span></p>
+</html>
