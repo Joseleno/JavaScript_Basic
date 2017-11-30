@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta http-equiv="Content-Language" content="pt" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Evenements</title>
+
+	<p>
+		<h1>Bonjour le monde!</h1>
+		<h1>==================================================================================</h1>
+		<h1 id="id1"></h1>
+	</p>
+
+	<script type="text/javascript">
+		function onLoadTest()
+		{
+			alert("Bonjour le monde!!! \nLa page est chargée");
+		}
+		
+		function showKeyPress(event)
+		{
+			var x = event.which;
+			keychar = String.fromCharCode(x);
+			alert("Le eclé " + keychar + " a été pressée");
+		}
+		
+	</script>
+</head>
+<body onload="onLoadTest()">
+	<p>Test onkeypress event: <input type="text" onkeypress="showKeyPress(event)"></p>
+</body>
+</html>
