@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Language" content="pt" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Global Functions</title>
+
+    <p>
+        <h1>Bonjour le monde!</h1>
+        <h1>==================================================================================</h1>
+        <h1 id="id1"></h1>
+    </p>
+    
+
+    <script type="text/javascript">
+        function TestGlobal1()
+		{
+			var result = "The 123 in NaN is " + isNaN(123) + "\n";
+			result = result + "The 3.14 in NaN is " + isNaN(3.14) + "\n";
+			result = result + "The Joseleno in NaN is " + isNaN("Joseleno");
+			alert(result);
+		}
+	
+		function TestGlobal2()
+		{
+			var result = "The 10 in parseFloat is " + parseFloat("10") + "\n";
+			result = result + "The 3.14 in parseFloat is " + parseFloat("3.14") + "\n";
+			result = result + "The Joseleno in parseFloat is " + parseFloat("Joseleno");
+			alert(result);
+		}
+		
+		function TestGlobal3()
+		{
+			var out = escape("Joseleno Moreira is a Developer!");
+			alert(out);
+		}
+        </script>
+</head>
+<body>
+<p><button onclick="TestGlobal1()">Exemple - 1</button></p>
+	
+	<br>
+	
+	<p><button onclick="TestGlobal2()">Exemple - 2</button></p>
+	
+	<br>
+	
+	<p><button onclick="TestGlobal3()">Exemple - 3</button></p>
+</body>
+
+</html>
