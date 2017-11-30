@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta http-equiv="Content-Language" content="pt" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Global Functions</title>
+
+	<p>
+		<h1>Bonjour le monde!</h1>
+		<h1>==================================================================================</h1>
+		<h1 id="id1"></h1>
+	</p>
+
+
+	<script type="text/javascript">
+		function myColors(color1, color2, callback) {
+			alert("My favorite colors are: " + color1 + ", " + color2);
+			callback();
+		}
+
+		function myCars(car1, car2, callback) {
+			alert("My favorite cars are: " + car1 + ", " + car2);
+			callback();
+		}
+
+		function otherMyCars() {
+			alert("My others favorite cars are: Ferrari and Porsche");
+		}
+	</script>
+</head>
+
+<body>
+	<p>
+		<button onclick="myColors('Green', 'Blue', function(){ alert('...And All Colors.');});"> Click Here to Test 1 of Callback Functions
+</button>
+</p>
+
+<p>
+	<button onclick="myCars('BMW', 'Audi', otherMyCars);"> Click Here to Test 2 of Callback Functions
+</button>
+</p>
+</body>
+
+</html>
