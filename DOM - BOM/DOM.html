@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta http-equiv="Content-Language" content="pt" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>DOM</title>
+
+	<p>
+		<h1>Bonjour le monde!</h1>
+		<h1>==================================================================================</h1>
+		
+	</p>
+
+	<script type="text/javascript">
+		function findingById()
+		{
+			x = document.getElementById("id");
+			alert(x.innerHTML);
+		}
+		
+		function findingByTagName()
+		{
+			var x = document.getElementById("div1");
+			var y = x.getElementsByTagName("p");
+			
+			alert(y[1].innerHTML);
+		}
+	</script>
+</head>
+<body>
+<p><button onclick="findingById()">Recherche d'éléments HTML par ID avec DOM</button></p>
+
+<p><button onclick="findingByTagName()">Recherche d'éléments HTML par NOM avec DOM</button></p>
+
+<br>
+
+<p id="id">Bonjour le monde!!!</p>
+
+<br>
+
+<div id="div1">
+	<p>Je veux travailer au Quebec.</p>
+	<p>Je préfère Back End, mais je peux aussi travailler avec Front End</p>
+</div>
+</body>
+
+</html>
