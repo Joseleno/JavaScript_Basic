@@ -6,11 +6,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>DOM</title>
 
-	<p>
 		<h1>Bonjour le monde!</h1>
-		<h1>==================================================================================</h1>
-		
-	</p>
+		<h5>===============================================================================================================================</h5>
 
 	<script type="text/javascript">
 		function findingById()
@@ -30,19 +27,34 @@
 </head>
 <body>
 <p><button onclick="findingById()">Recherche d'éléments HTML par ID avec DOM</button></p>
-
 <p><button onclick="findingByTagName()">Recherche d'éléments HTML par NOM avec DOM</button></p>
-
-<br>
-
 <p id="id">Bonjour le monde!!!</p>
-
-<br>
-
 <div id="div1">
 	<p>Je veux travailer au Quebec.</p>
 	<p>Je préfère Back End, mais je peux aussi travailler avec Front End</p>
 </div>
+<h5>===============================================================================================================================</h5>
+<script type="text/javascript">
+		document.write(Date());
+	</script>
+	
+	
+	<h3 id="myHeader">Bonjour le monde!!!</h3>
+	
+	<script type="text/javascript">
+		var elementHeader = document.getElementById("myHeader");
+		elementHeader.innerHTML = "Nouveau contenu à Header.";
+	</script>
+
+	
+	<img id="maProto" src = "photo1.jpg" />
+	
+	<script type="text/javascript">
+		document.getElementById("maProto").src = "photo2.jpg";
+	</script>
+
+<h5>===============================================================================================================================</h5>
+
 </body>
 
 </html>
